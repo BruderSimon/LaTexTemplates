@@ -1,0 +1,14 @@
+* LaTex Template
+
+This repository contains usefull LaTeX templates.
+
+* Content
+
+** CV Template
+  Author : Jake Gutierrez,
+  Git-Repository: https://github.com/jakegut/resume ,
+  Licence: MIT
+  
+** Windowed Envelope Template
+  Author: Alexey Abel,
+  Git-Repository: https://github.com/PanCakeConnaisseur/latex-briefvorlage-din-5008
