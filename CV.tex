@@ -1,7 +1,7 @@
 % -------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
+% Resume in LaTeX
+% Author : Simon Engel
+% Based off of: https://github.com/jakegut/resume
 % License : MIT
 % ------------------------
 
@@ -14,12 +14,19 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[
+            pdftitle={Curriculum Vitae of Simon Engel},
+            pdfauthor={Simon Engel},
+            hidelinks
+            ]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \input{glyphtounicode}
+% For Image
+\usepackage{graphicx}
+\usepackage{wrapfig2}
 
 
 % ----------FONT OPTIONS----------
@@ -106,12 +113,28 @@
 
 \begin{document}
 
-% ----------HEADING----------
+% ----------HEADING WITH IMAGE----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  %   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+%   \begin{minipage}[b]{0.75\textwidth}
+    
+%     \textbf{\Huge \scshape Simon Engel} \\
+%      \begin{itemize}[leftmargin=0.15in, label={}]
+%       \item{
+%           \raisebox{-0.1\height}\faPhone\ +XX-XXXXXXXXXX\\
+%           \href{mailto:mail@mail.com}{\raisebox{-0.1\height}\faEnvelope\ \underline{mail@mail.com}} \\
+%           \href{https://github.com/BruderSimon}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/BruderSimon}} \\
+%           \href{https://simonengel.net}{\raisebox{-0.2\height}\faGlobe\ \underline{simonengel.net}}
+%        }
+%      \end{itemize}
+%      \vspace{0.1cm}
+%    \end{minipage} &
+%    \begin{minipage}[b]{0.25\textwidth}
+%      \raggedleft
+%      \includegraphics[width=0.8\textwidth, height=1\textwidth]{img.jpg}
+%    \end{minipage}
 % \end{tabular*}
 
+% ----------HEADING WITHOUT IMAGE----------
 \begin{center}
     \textbf{\Huge \scshape Simon Engel} \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ +XX-XXXXXXXXXX $|$
