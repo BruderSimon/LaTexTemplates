@@ -1,0 +1,61 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% beamer theme
+\usetheme{madrid}
+% Color theme
+% \usecolortheme{beaver}
+
+% hide navigation buttons at bottom
+\setbeamertemplate{navigation symbols}{}
+% Transparant frame pages
+\setbeamercovered{transparent}
+
+% Fonts and encoding
+\usepackage[english]{babel}
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+
+% Images and graphics
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+%\usepackage{wrapfig2}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgf-pie}% Pie chart
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{mathrsfs}
+\usetikzlibrary{shapes,arrows.meta,positioning,datavisualization,graphs}
+
+% To reduce the compilation time: export graphs to external and then import again
+% \usepgfplotslibrary{external}
+% \tikzexternalize
+
+% Additional functionality
+\usepackage{bytefield}
+\usepackage{rotating}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath, amsthm, amssymb}
+
+\title[Short Title]{Long Title}
+\author[Short author]{Long Author}
+\institute[short]{long}
+%\date{August 2025}
+
+\begin{document}
+\maketitle
+\setbeamercovered{invisible}
+
+% TOC
+\begin{frame}
+  \frametitle{Overview}
+  \tableofcontents
+\end{frame}
+
+% Chapters
+%\input{chapter/introduction}
+
+\end{document}

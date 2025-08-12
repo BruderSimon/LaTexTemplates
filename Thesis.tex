@@ -1,0 +1,124 @@
+\documentclass[oneside,12pt,a4paper]{report}
+
+% Font and encoding
+\usepackage[english]{babel}
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+
+% Layout
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+%\usepackage[Bjornstrup]{fncychap}
+
+%\usepackage{tocloft}
+%\setlength{\cftbeforetoctitleskip}{-5pt} % Reduce space before TOC title
+%\setlength{\cftaftertoctitleskip}{5pt}    % Reduce space after TOC title
+%\setlength{\cftparskip}{2pt}              % Reduce space between entries
+%\setlength{\cftbeforesecskip}{2pt}        % Reduce space before section entries
+
+% Glossaries
+\usepackage[acronym]{glossaries}
+
+% Images and graphics
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+%\usepackage{wrapfig2}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows.meta,positioning,datavisualization,graphs}
+
+\usepackage{pgfplots}
+\usepackage{listings}
+
+% Symbols
+\usepackage{eurosym}
+
+% C plus plus
+\def\cpp{
+  C\texttt{++}
+}
+% C sharp
+\def\csharp{
+  C\texttt{\#}
+}
+
+% Additional functionality
+\usepackage{bytefield}
+\usepackage{rotating}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath, amsthm, amssymb}
+
+% For Testing
+%\usepackage{lipsum}
+
+% Better Date and Time
+\usepackage{datetime2}
+
+\usepackage[table, xcdraw]{xcolor}
+
+% Citing
+\usepackage{csquotes}
+%\usepackage{acronym}
+
+% BibLatex
+\usepackage[
+backend=biber,
+style=ieee,
+sorting=ynt
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+\newcommand{\ThesisTitle}{Title}
+
+\usepackage[
+            pdftitle={\ThesisTitle},
+            pdfauthor={Author},
+            %hidelinks
+            ]{hyperref}
+
+\glsresetall
+\makeglossaries
+
+\input{acronym.tex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\leftmark}
+\fancyfoot[C]{\thepage}
+\begin{document}
+
+\onehalfspacing
+
+% Title page
+\include{titlepage}
+
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
+%\include{declaration}
+%\include{acknowledgment}
+%\include{abstract}
+
+\tableofcontents
+\listoffigures
+%\listoftables
+%\listofalgorithms
+
+\printglossary[type=\acronymtype]
+
+% Reset Page numbering
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Chapters
+%\include{chapters/introduction}
+
+
+\printbibliography
+  
+\end{document}
